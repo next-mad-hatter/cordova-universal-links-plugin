@@ -29,7 +29,9 @@ function readXmlAsJson(filePath) {
         parsedData = data;
       }
     });
-  } catch (err) {}
+  } catch (err) {
+    console.error(err);
+  }
 
   return parsedData;
 }
